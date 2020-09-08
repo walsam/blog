@@ -19,7 +19,8 @@
         "symfony/property-access": "4.4.*",
         "symfony/property-info": "4.4.*",
         "symfony/serializer": "4.4.*",
-        "symfony/yaml": "4.4.*"
+        "symfony/yaml": "4.4.*",
+        "easycorp/easyadmin-bundle": "^v2.1.4"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
