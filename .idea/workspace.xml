@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/api_platform.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20200908202847.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20200907152827.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200909110948.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20200907154409.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +129,13 @@
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/symfony/intl" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1h94hT8rMOm7C7pwBlaiOj7ANv0" />
@@ -139,6 +160,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -151,7 +173,8 @@
       <updated>1599410092601</updated>
       <workItem from="1599410093641" duration="3167000" />
       <workItem from="1599490985540" duration="5622000" />
-      <workItem from="1599580587732" duration="9297000" />
+      <workItem from="1599580587732" duration="15374000" />
+      <workItem from="1599646847036" duration="3833000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -167,7 +190,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599592127470</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="easyadmin version2 installed">
+      <created>1599592619278</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599592619278</updated>
+    </task>
+    <task id="LOCAL-00004" summary="easyadmin version2 installed">
+      <created>1599592663588</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599592663588</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,21 +214,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="testing the controller and routing in symfony" />
     <MESSAGE value="before easy admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="before easy admin" />
+    <MESSAGE value="easyadmin version2 installed" />
+    <option name="LAST_COMMIT_MESSAGE" value="easyadmin version2 installed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1764" y="529" width="444" height="249" key="#Composer/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599410215894" />
-    <state x="1765" y="360" width="441" height="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1599493408617">
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser" timestamp="1599649718615">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1765" y="360" width="441" height="588" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599493408617" />
-    <state x="1336" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599592127343">
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599649718615" />
+    <state x="1336" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599592663555">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1336" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599592127343" />
+    <state x="1336" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599592663555" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -208,9 +246,9 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1702" y="423" width="568" height="462" key="refactoring.ChangeSignatureDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599586352421" />
-    <state x="1654" y="345" width="672" height="678" key="search.everywhere.popup" timestamp="1599586244621">
+    <state x="1654" y="345" width="672" height="678" key="search.everywhere.popup" timestamp="1599649521933">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1654" y="345" width="672" height="678" key="search.everywhere.popup/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599586244621" />
+    <state x="1654" y="345" width="672" height="678" key="search.everywhere.popup/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599649521933" />
   </component>
 </project>
