@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/api_platform.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20200908202847.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200907152827.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200909110948.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200907154409.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +157,7 @@
       <workItem from="1599490985540" duration="5622000" />
       <workItem from="1599580587732" duration="15374000" />
       <workItem from="1599646847036" duration="3833000" />
+      <workItem from="1599658090355" duration="1906000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -204,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599592663588</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="relation between comments and a post. added some data through Fixtures, and generated random data with Faker.">
+      <created>1599658332834</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599658332834</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +205,8 @@
     <MESSAGE value="testing the controller and routing in symfony" />
     <MESSAGE value="before easy admin" />
     <MESSAGE value="easyadmin version2 installed" />
-    <option name="LAST_COMMIT_MESSAGE" value="easyadmin version2 installed" />
+    <MESSAGE value="relation between comments and a post. added some data through Fixtures, and generated random data with Faker." />
+    <option name="LAST_COMMIT_MESSAGE" value="relation between comments and a post. added some data through Fixtures, and generated random data with Faker." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -226,10 +217,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599649718615" />
-    <state x="1336" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599592663555">
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599658332553">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1336" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599592663555" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599658332553" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -238,6 +229,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1750" y="399" width="609" height="568" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599410792644" />
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599658373402">
+      <screen x="1280" y="256" width="1366" height="768" />
+    </state>
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599658373402" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
