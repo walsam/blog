@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/PasswordHashSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +179,7 @@
       <workItem from="1599490985540" duration="5622000" />
       <workItem from="1599580587732" duration="15374000" />
       <workItem from="1599646847036" duration="3833000" />
-      <workItem from="1599658090355" duration="5777000" />
+      <workItem from="1599658090355" duration="6441000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -201,11 +223,41 @@
       <option name="project" value="LOCAL" />
       <updated>1599664047707</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="hashing the password, and verifying the email, password .... while creating a user.">
+      <created>1599668454883</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599668454883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -214,21 +266,23 @@
     <MESSAGE value="easyadmin version2 installed" />
     <MESSAGE value="relation between comments and a post. added some data through Fixtures, and generated random data with Faker." />
     <MESSAGE value="blocking some opperation in my API" />
-    <option name="LAST_COMMIT_MESSAGE" value="blocking some opperation in my API" />
+    <MESSAGE value="adding post for users, and verifying the email, password ...." />
+    <MESSAGE value="hashing the password, and verifying the email, password .... while creating a user." />
+    <option name="LAST_COMMIT_MESSAGE" value="hashing the password, and verifying the email, password .... while creating a user." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1764" y="529" width="444" height="249" key="#Composer/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599410215894" />
-    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser" timestamp="1599665861364">
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser" timestamp="1599668681968">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599665861364" />
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599664047657">
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599668681968" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599668454823">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599664047657" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599668454823" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
