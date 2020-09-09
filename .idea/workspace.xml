@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/PasswordHashSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,7 @@
       <workItem from="1599490985540" duration="5622000" />
       <workItem from="1599580587732" duration="15374000" />
       <workItem from="1599646847036" duration="3833000" />
-      <workItem from="1599658090355" duration="1906000" />
+      <workItem from="1599658090355" duration="5777000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599658332834</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="blocking some opperation in my API">
+      <created>1599664047707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599664047707</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,29 +213,30 @@
     <MESSAGE value="before easy admin" />
     <MESSAGE value="easyadmin version2 installed" />
     <MESSAGE value="relation between comments and a post. added some data through Fixtures, and generated random data with Faker." />
-    <option name="LAST_COMMIT_MESSAGE" value="relation between comments and a post. added some data through Fixtures, and generated random data with Faker." />
+    <MESSAGE value="blocking some opperation in my API" />
+    <option name="LAST_COMMIT_MESSAGE" value="blocking some opperation in my API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1764" y="529" width="444" height="249" key="#Composer/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599410215894" />
-    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser" timestamp="1599649718615">
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser" timestamp="1599665861364">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599649718615" />
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599658332553">
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599665861364" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599664047657">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599658332553" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599664047657" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599592209599" />
-    <state x="1750" y="399" width="609" height="568" key="NewPhpClassDialog" timestamp="1599410792644">
+    <state x="1750" y="399" width="649" height="575" key="NewPhpClassDialog" timestamp="1599665801358">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1750" y="399" width="609" height="568" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599410792644" />
+    <state x="1750" y="399" width="649" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599665801358" />
     <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599658373402">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
