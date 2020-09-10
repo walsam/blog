@@ -26,8 +26,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/jwt.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +150,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/link" />
       <path value="$PROJECT_DIR$/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
     </include_path>
   </component>
   <component name="ProjectId" id="1h94hT8rMOm7C7pwBlaiOj7ANv0" />
@@ -179,7 +192,8 @@
       <workItem from="1599490985540" duration="5622000" />
       <workItem from="1599580587732" duration="15374000" />
       <workItem from="1599646847036" duration="3833000" />
-      <workItem from="1599658090355" duration="6441000" />
+      <workItem from="1599658090355" duration="6848000" />
+      <workItem from="1599731497512" duration="4085000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -230,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599668454883</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added unique fields (email, username), and repeating the password (virtual field)">
+      <created>1599669139095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599669139095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +279,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -268,7 +290,8 @@
     <MESSAGE value="blocking some opperation in my API" />
     <MESSAGE value="adding post for users, and verifying the email, password ...." />
     <MESSAGE value="hashing the password, and verifying the email, password .... while creating a user." />
-    <option name="LAST_COMMIT_MESSAGE" value="hashing the password, and verifying the email, password .... while creating a user." />
+    <MESSAGE value="added unique fields (email, username), and repeating the password (virtual field)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added unique fields (email, username), and repeating the password (virtual field)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -279,10 +302,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599668681968" />
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599668454823">
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599669139041">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599668454823" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599669139041" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -291,14 +314,18 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1750" y="399" width="649" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599665801358" />
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599658373402">
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599669144045">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599658373402" />
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599669144045" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599591999345" />
+    <state x="1772" y="565" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599669356035">
+      <screen x="1280" y="256" width="1366" height="768" />
+    </state>
+    <state x="1772" y="565" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599669356035" />
     <state x="1702" y="423" width="568" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1599586352421">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
