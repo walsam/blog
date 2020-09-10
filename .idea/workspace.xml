@@ -26,11 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +184,7 @@
       <workItem from="1599646847036" duration="3833000" />
       <workItem from="1599658090355" duration="6848000" />
       <workItem from="1599731497512" duration="4741000" />
-      <workItem from="1599756058544" duration="2475000" />
+      <workItem from="1599756058544" duration="3208000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -252,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599735633298</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Using is_granted() to limit some stuff to only authenticated users, and set the author inside blog_posts automatically.">
+      <created>1599758630409</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599758630409</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +297,8 @@
     <MESSAGE value="hashing the password, and verifying the email, password .... while creating a user." />
     <MESSAGE value="added unique fields (email, username), and repeating the password (virtual field)" />
     <MESSAGE value="Added user authentication and JWT tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added user authentication and JWT tokens" />
+    <MESSAGE value="Using is_granted() to limit some stuff to only authenticated users, and set the author inside blog_posts automatically." />
+    <option name="LAST_COMMIT_MESSAGE" value="Using is_granted() to limit some stuff to only authenticated users, and set the author inside blog_posts automatically." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -304,10 +309,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599757617121" />
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599735633187">
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2" timestamp="1599758630278">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599735633187" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599758630278" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -316,10 +321,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1750" y="399" width="649" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599757589587" />
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599735637104">
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599758634664">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599735637104" />
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599758634664" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
