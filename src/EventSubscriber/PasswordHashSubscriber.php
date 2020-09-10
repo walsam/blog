@@ -6,7 +6,7 @@ namespace App\EventSubscriber;
 
 use ApiPlatform\Core\EventListener\EventPriorities;
 use App\Entity\User;
-use http\Env\Request;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForControllerResultEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -35,7 +35,7 @@ class PasswordHashSubscriber implements EventSubscriberInterface
         $user = $event->getControllerResult();
         $method = $event->getRequest()->getMethod();
 
-        if(!$user instanceof  User || \Symfony\Component\HttpFoundation\Request::METHOD_POST !== $method ){
+        if(!$user instanceof  User || !in_array($method, [Request::METHOD_POST,Request::METHOD_PUT]) ){
             return;
         }
 
