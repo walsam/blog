@@ -26,7 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/PublishedDateEntitySubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
@@ -192,7 +191,7 @@
       <workItem from="1599658090355" duration="6848000" />
       <workItem from="1599731497512" duration="4741000" />
       <workItem from="1599756058544" duration="6086000" />
-      <workItem from="1599821233892" duration="7060000" />
+      <workItem from="1599821233892" duration="8469000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -292,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599827096644</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="set the current date for blog_posts and comments via EventSubscriber">
+      <created>1599830044933</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599830044933</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +344,8 @@
     <MESSAGE value="users can change there profiles (can't change the userename), the password is hashed when modified." />
     <MESSAGE value="some fixes for comments authorizations (still needs work)" />
     <MESSAGE value="Added more users in datafixtures, randomized authors of comments and blogs. + added AuthoredEntityInterface &amp; PublishedDateEntityInterface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more users in datafixtures, randomized authors of comments and blogs. + added AuthoredEntityInterface &amp; PublishedDateEntityInterface" />
+    <MESSAGE value="set the current date for blog_posts and comments via EventSubscriber" />
+    <option name="LAST_COMMIT_MESSAGE" value="set the current date for blog_posts and comments via EventSubscriber" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -353,11 +360,11 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1479" y="413" width="414" height="452" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599825482493" />
-    <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599827096540">
-      <screen x="0" y="277" width="1280" height="747" />
+    <state x="1675" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599830044883">
+      <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599762128064" />
+    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599830044883" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -367,10 +374,10 @@
     </state>
     <state x="440" y="416" width="577" height="568" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599826679308" />
     <state x="1750" y="399" width="649" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599757589587" />
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599762131759">
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599830076332">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599762131759" />
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599830076332" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
