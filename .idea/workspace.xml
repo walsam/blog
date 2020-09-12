@@ -26,7 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +192,7 @@
       <workItem from="1599731497512" duration="4741000" />
       <workItem from="1599756058544" duration="6086000" />
       <workItem from="1599821233892" duration="8469000" />
-      <workItem from="1599912178409" duration="3346000" />
+      <workItem from="1599912178409" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -318,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599915333542</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added role_hierarchy into security.yaml to help me later on.">
+      <created>1599915568721</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599915568721</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +377,8 @@
     <MESSAGE value="adding Author's informations to posts and comments instead of urls." />
     <MESSAGE value="added some Roles to users (a user can have multiple roles)" />
     <MESSAGE value="added the roles into data fixtures with proper comments and posts accordingly to the user role" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the roles into data fixtures with proper comments and posts accordingly to the user role" />
+    <MESSAGE value="added role_hierarchy into security.yaml to help me later on." />
+    <option name="LAST_COMMIT_MESSAGE" value="added role_hierarchy into security.yaml to help me later on." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -383,11 +393,11 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1479" y="413" width="414" height="452" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599825482493" />
-    <state x="1675" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599915333483">
+    <state x="1580" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599915568673">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1675" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599915333483" />
+    <state x="1580" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599915568673" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
