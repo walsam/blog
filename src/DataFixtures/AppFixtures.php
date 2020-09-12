@@ -27,25 +27,43 @@ class AppFixtures extends Fixture
             'username' => 'admin',
             'email' => 'admin@blog.com',
             'name' => 'Piotr Jura',
-            'password' => 'secret123#'
+            'password' => 'secret123#',
+            'roles' => [User::ROLE_SUPERADMINE]
         ],
         [
             'username' => 'john_doe',
             'email' => 'john@blog.com',
             'name' => 'John Doe',
-            'password' => 'secret123#'
+            'password' => 'secret123#',
+            'roles' => [User::ROLE_ADMIN]
         ],
         [
             'username' => 'rob_smith',
             'email' => 'rob@blog.com',
             'name' => 'Rob Smith',
-            'password' => 'secret123#'
+            'password' => 'secret123#',
+            'roles' => [User::ROLE_WRITER]
         ],
         [
             'username' => 'jenny_rowling',
             'email' => 'jenny@blog.com',
             'name' => 'Jenny Rowling',
-            'password' => 'secret123#'
+            'password' => 'secret123#',
+            'roles' => [User::ROLE_WRITER]
+        ],
+        [
+            'username' => 'han_solo',
+            'email' => 'han@blog.com',
+            'name' => 'Han Solo',
+            'password' => 'secret123#',
+            'roles' => [User::ROLE_EDITOR]
+        ],
+        [
+            'username' => 'jedi_knight',
+            'email' => 'jedi@blog.com',
+            'name' => 'Jedi knight',
+            'password' => 'secret123#',
+            'roles' => [User::ROLE_COMMENTATOR]
         ]
     ];
 
@@ -69,7 +87,7 @@ class AppFixtures extends Fixture
             $blogPost = new BlogPost();
             $blogPost->setTitle($this->faker->realText(30));
             $blogPost->setPublished($this->faker->dateTimeThisYear);
-            $authorReference = $this->getRandomUserReference();
+            $authorReference = $this->getRandomUserReference($blogPost);
             $blogPost->setAuthor($authorReference);
             $blogPost->setContent($this->faker->realText());
             $blogPost->setSlug($this->faker->slug);
@@ -89,7 +107,7 @@ class AppFixtures extends Fixture
 
                 $comment->setContent($this->faker->realText(150));
                 $comment->setPublished($this->faker->dateTimeThisYear);
-                $authorReference = $this->getRandomUserReference();
+                $authorReference = $this->getRandomUserReference($comment);
                 $comment->setAuthor($authorReference);
                 $comment->setBlogPost($this->getReference("blog_post_$i"));
                 $manager->persist($comment);
@@ -108,6 +126,7 @@ class AppFixtures extends Fixture
                 $user,
                 $userFixture['password']
             ));
+            $user->setRoles($userFixture['roles']);
 
             $this->addReference('user_'. $userFixture['username'], $user);
 
@@ -117,8 +136,39 @@ class AppFixtures extends Fixture
         $manager->flush();
     }
 
-    protected function getRandomUserReference(): User
+    protected function getRandomUserReference($entity): User
     {
-        return $this->getReference('user_' . self::USERS[rand(0, 3)]['username']);
+        $randomUser = self::USERS[rand(0, 5)];
+
+        if ($entity instanceof BlogPost && !count(
+                array_intersect(
+                    $randomUser['roles'],
+                    [
+                        User::ROLE_SUPERADMINE,
+                        User::ROLE_ADMIN,
+                        User::ROLE_WRITER
+                    ]
+                )
+            )) {
+            return $this->getRandomUserReference($entity);
+        }
+
+        if ($entity instanceof Comment && !count(
+                array_intersect(
+                    $randomUser['roles'],
+                    [
+                        User::ROLE_SUPERADMINE,
+                        User::ROLE_ADMIN,
+                        User::ROLE_WRITER,
+                        User::ROLE_COMMENTATOR
+                    ]
+                )
+            )) {
+            return $this->getRandomUserReference($entity);
+        }
+
+        return $this->getReference(
+            'user_' .$randomUser['username']
+        );
     }
 }
