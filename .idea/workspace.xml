@@ -26,9 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Serializer/UserAttributeNormalizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Serializer/UserContextBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +195,7 @@
       <workItem from="1599731497512" duration="4741000" />
       <workItem from="1599756058544" duration="6086000" />
       <workItem from="1599821233892" duration="8469000" />
-      <workItem from="1599912178409" duration="4026000" />
+      <workItem from="1599912178409" duration="9113000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -327,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599915568721</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixed what every role can do :D">
+      <created>1599916459581</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599916459581</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,35 +388,40 @@
     <MESSAGE value="added some Roles to users (a user can have multiple roles)" />
     <MESSAGE value="added the roles into data fixtures with proper comments and posts accordingly to the user role" />
     <MESSAGE value="added role_hierarchy into security.yaml to help me later on." />
-    <option name="LAST_COMMIT_MESSAGE" value="added role_hierarchy into security.yaml to help me later on." />
+    <MESSAGE value="fixed what every role can do :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed what every role can do :D" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1764" y="529" width="444" height="249" key="#Composer/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599410215894" />
-    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser" timestamp="1599757617121">
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser" timestamp="1599922252263">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599757617121" />
+    <state x="1765" y="360" width="441" height="602" key="#com.intellij.ide.util.MemberChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599922252263" />
     <state x="1479" y="413" width="414" height="452" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1599825482493">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1479" y="413" width="414" height="452" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599825482493" />
-    <state x="1580" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599915568673">
+    <state x="1580" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599916459531">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1580" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599915568673" />
+    <state x="1580" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599916459531" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599592209599" />
-    <state x="440" y="416" width="577" height="568" key="NewPhpClassDialog" timestamp="1599826679308">
-      <screen x="0" y="277" width="1280" height="747" />
+    <state x="1750" y="399" width="577" height="568" key="NewPhpClassDialog" timestamp="1599922131966">
+      <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="440" y="416" width="577" height="568" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599826679308" />
-    <state x="1750" y="399" width="649" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599757589587" />
+    <state x="1750" y="399" width="649" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599922131966" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1599921194000">
+      <screen x="1280" y="256" width="1366" height="768" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599921194000" />
     <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599839293412">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>

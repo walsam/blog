@@ -54,7 +54,7 @@ class User implements UserInterface
     const ROLE_WRITER = "ROLE_WRITER";
     const ROLE_EDITOR = "ROLE_EDITOR";
     const ROLE_ADMIN = "ROLE_ADMIN";
-    const ROLE_SUPERADMINE = "ROLE_SUPERADMINE";
+    const ROLE_SUPERADMIN = "ROLE_SUPERADMIN";
 
     const DEFAULT_ROLE = [self::ROLE_COMMENTATOR];
 
@@ -106,7 +106,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"post","put"})
+     * @Groups({"post","put", "get-admin", "get-owner"})
      * @Assert\NotBlank()
      * @Assert\Email()
      */
@@ -126,6 +126,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="simple_array", length=200)
+     * @Groups({"get-admin", "get-owner"})
      */
     private $roles;
 

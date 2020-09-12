@@ -25,44 +25,44 @@ class AppFixtures extends Fixture
     private const USERS = [
         [
             'username' => 'admin',
-            'email' => 'admin@blog.com',
-            'name' => 'Piotr Jura',
-            'password' => 'secret123#',
-            'roles' => [User::ROLE_SUPERADMINE]
+            'email' => 'walsam@mail.com',
+            'name' => 'Walid Maarad',
+            'password' => 'Password1',
+            'roles' => [User::ROLE_SUPERADMIN]
         ],
         [
-            'username' => 'john_doe',
-            'email' => 'john@blog.com',
-            'name' => 'John Doe',
-            'password' => 'secret123#',
+            'username' => 'michou',
+            'email' => 'michou@blog.com',
+            'name' => 'Oussama Maachou',
+            'password' => 'Password1',
             'roles' => [User::ROLE_ADMIN]
         ],
         [
-            'username' => 'rob_smith',
-            'email' => 'rob@blog.com',
-            'name' => 'Rob Smith',
-            'password' => 'secret123#',
+            'username' => 'doudou',
+            'email' => 'doudou@blog.com',
+            'name' => 'Abdessamed Saidi',
+            'password' => 'Password1',
             'roles' => [User::ROLE_WRITER]
         ],
         [
-            'username' => 'jenny_rowling',
-            'email' => 'jenny@blog.com',
-            'name' => 'Jenny Rowling',
-            'password' => 'secret123#',
+            'username' => 'Soussou',
+            'email' => 'soussou@blog.com',
+            'name' => 'Soufiane Nsabi',
+            'password' => 'Password1',
             'roles' => [User::ROLE_WRITER]
         ],
         [
-            'username' => 'han_solo',
-            'email' => 'han@blog.com',
-            'name' => 'Han Solo',
-            'password' => 'secret123#',
+            'username' => 'redone',
+            'email' => 'red1@blog.com',
+            'name' => 'Redwane Bessisse',
+            'password' => 'Password1',
             'roles' => [User::ROLE_EDITOR]
         ],
         [
-            'username' => 'jedi_knight',
-            'email' => 'jedi@blog.com',
-            'name' => 'Jedi knight',
-            'password' => 'secret123#',
+            'username' => 'redtef',
+            'email' => 'redtef@blog.com',
+            'name' => 'Hamza Takouit',
+            'password' => 'Password1',
             'roles' => [User::ROLE_COMMENTATOR]
         ]
     ];
