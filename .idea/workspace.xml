@@ -26,12 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Serializer/UserAttributeNormalizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serializer/UserContextBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +191,7 @@
       <workItem from="1599731497512" duration="4741000" />
       <workItem from="1599756058544" duration="6086000" />
       <workItem from="1599821233892" duration="8469000" />
-      <workItem from="1599912178409" duration="9113000" />
+      <workItem from="1599912178409" duration="10097000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -337,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599916459581</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added 2 serializer services, one to show more data about users for the admins, the other one to show more data for the user himself.&#10;also updated AppFixtures to load some data to try everything.">
+      <created>1599923749170</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599923749170</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +392,8 @@
     <MESSAGE value="added the roles into data fixtures with proper comments and posts accordingly to the user role" />
     <MESSAGE value="added role_hierarchy into security.yaml to help me later on." />
     <MESSAGE value="fixed what every role can do :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed what every role can do :D" />
+    <MESSAGE value="added 2 serializer services, one to show more data about users for the admins, the other one to show more data for the user himself.&#10;also updated AppFixtures to load some data to try everything." />
+    <option name="LAST_COMMIT_MESSAGE" value="added 2 serializer services, one to show more data about users for the admins, the other one to show more data for the user himself.&#10;also updated AppFixtures to load some data to try everything." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -404,11 +408,11 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1479" y="413" width="414" height="452" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599825482493" />
-    <state x="1580" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599916459531">
+    <state x="1580" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1599923749117">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1580" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599916459531" />
+    <state x="1580" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599923749117" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -422,18 +426,18 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state width="498" height="446" key="SwitcherDM/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599921194000" />
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599839293412">
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599923863743">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599839293412" />
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599923863743" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599591999345" />
-    <state x="1772" y="565" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599669356035">
+    <state x="1772" y="565" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599924365651">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1772" y="565" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599669356035" />
+    <state x="1772" y="565" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599924365651" />
     <state x="1702" y="423" width="568" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1599586352421">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
