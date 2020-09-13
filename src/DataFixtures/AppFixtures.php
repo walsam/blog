@@ -127,6 +127,7 @@ class AppFixtures extends Fixture
                 $userFixture['password']
             ));
             $user->setRoles($userFixture['roles']);
+            $user->setEnabled(true);
 
             $this->addReference('user_'. $userFixture['username'], $user);
 
@@ -144,7 +145,7 @@ class AppFixtures extends Fixture
                 array_intersect(
                     $randomUser['roles'],
                     [
-                        User::ROLE_SUPERADMINE,
+                        User::ROLE_SUPERADMIN,
                         User::ROLE_ADMIN,
                         User::ROLE_WRITER
                     ]
@@ -157,7 +158,7 @@ class AppFixtures extends Fixture
                 array_intersect(
                     $randomUser['roles'],
                     [
-                        User::ROLE_SUPERADMINE,
+                        User::ROLE_SUPERADMIN,
                         User::ROLE_ADMIN,
                         User::ROLE_WRITER,
                         User::ROLE_COMMENTATOR
