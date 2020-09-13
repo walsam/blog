@@ -5,6 +5,7 @@ namespace App\DataFixtures;
 use App\Entity\BlogPost;
 use App\Entity\Comment;
 use App\Entity\User;
+use App\Security\TokenGenerator;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use phpDocumentor\Reflection\Types\Compound;
@@ -28,48 +29,62 @@ class AppFixtures extends Fixture
             'email' => 'walsam@mail.com',
             'name' => 'Walid Maarad',
             'password' => 'Password1',
-            'roles' => [User::ROLE_SUPERADMIN]
+            'roles' => [User::ROLE_SUPERADMIN],
+            'enabled' => true
         ],
         [
             'username' => 'michou',
             'email' => 'michou@blog.com',
             'name' => 'Oussama Maachou',
             'password' => 'Password1',
-            'roles' => [User::ROLE_ADMIN]
+            'roles' => [User::ROLE_ADMIN],
+            'enabled' => false
         ],
         [
             'username' => 'doudou',
             'email' => 'doudou@blog.com',
             'name' => 'Abdessamed Saidi',
             'password' => 'Password1',
-            'roles' => [User::ROLE_WRITER]
+            'roles' => [User::ROLE_WRITER],
+            'enabled' => false
         ],
         [
             'username' => 'Soussou',
             'email' => 'soussou@blog.com',
             'name' => 'Soufiane Nsabi',
             'password' => 'Password1',
-            'roles' => [User::ROLE_WRITER]
+            'roles' => [User::ROLE_WRITER],
+            'enabled' => false
         ],
         [
             'username' => 'redone',
             'email' => 'red1@blog.com',
             'name' => 'Redwane Bessisse',
             'password' => 'Password1',
-            'roles' => [User::ROLE_EDITOR]
+            'roles' => [User::ROLE_EDITOR],
+            'enabled' => false
         ],
         [
             'username' => 'redtef',
             'email' => 'redtef@blog.com',
             'name' => 'Hamza Takouit',
             'password' => 'Password1',
-            'roles' => [User::ROLE_COMMENTATOR]
+            'roles' => [User::ROLE_COMMENTATOR],
+            'enabled' => false
         ]
     ];
+    /**
+     * @var TokenGenerator
+     */
+    private $tokenGenerator;
 
-    public function __construct(UserPasswordEncoderInterface $passwordEncoder){
+    public function __construct(
+        UserPasswordEncoderInterface $passwordEncoder,
+        TokenGenerator $tokenGenerator
+    ){
         $this->passwordEncoder = $passwordEncoder;
         $this->faker = \Faker\Factory::create();
+        $this->tokenGenerator = $tokenGenerator;
     }
     /**
      * @param ObjectManager $manager
@@ -127,7 +142,13 @@ class AppFixtures extends Fixture
                 $userFixture['password']
             ));
             $user->setRoles($userFixture['roles']);
-            $user->setEnabled(true);
+            $user->setEnabled($userFixture['enabled']);
+
+            if(!$user->getEnabled()){
+                $user->setConfirmationToken(
+                    $this->tokenGenerator->getRandomSecureToken()
+                );
+            }
 
             $this->addReference('user_'. $userFixture['username'], $user);
 
