@@ -16,6 +16,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * @ORM\Entity(repositoryClass=BlogPostRepository::class)
  * @ApiResource(
+ *     attributes={"order"={"published": "DESC"}},
  *     itemOperations={
  *             "get"={"normalization_context"={"groups"={"get-blog-post-with-author"}}},
  *             "put"={

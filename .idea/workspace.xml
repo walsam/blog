@@ -26,9 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/5f5f6421bd552288319622.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Image.php" afterDir="false" />
     </list>
     <list id="227999be-8382-452a-8516-12b01aec8ec9" name="the api send emails with confirmation links, and they work :D" comment="">
@@ -215,7 +215,7 @@
       <workItem from="1600012118049" duration="120000" />
       <workItem from="1600012247364" duration="7357000" />
       <workItem from="1600019618177" duration="495000" />
-      <workItem from="1600080757776" duration="5430000" />
+      <workItem from="1600080757776" duration="6336000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -427,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600083977072</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feat: linked the images with the blog_posts">
+      <created>1600087153802</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1600087153802</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="blocking some opperation in my API" />
     <MESSAGE value="adding post for users, and verifying the email, password ...." />
     <MESSAGE value="hashing the password, and verifying the email, password .... while creating a user." />
     <MESSAGE value="added unique fields (email, username), and repeating the password (virtual field)" />
@@ -484,7 +490,8 @@
     <MESSAGE value="feat: accounts can be confirmed using the token :D" />
     <MESSAGE value="the api send emails with confirmation links, and they work :D" />
     <MESSAGE value="feat: images can be uploaded and the name is generated with a link to that specific image :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: images can be uploaded and the name is generated with a link to that specific image :D" />
+    <MESSAGE value="feat: linked the images with the blog_posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: linked the images with the blog_posts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -511,11 +518,11 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1479" y="413" width="414" height="452" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599825482493" />
-    <state x="1580" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600083976872">
+    <state x="1580" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600087153738">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1580" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600083976872" />
+    <state x="1580" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600087153738" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
