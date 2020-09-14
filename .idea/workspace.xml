@@ -213,7 +213,7 @@
       <workItem from="1600012118049" duration="120000" />
       <workItem from="1600012247364" duration="7357000" />
       <workItem from="1600019618177" duration="495000" />
-      <workItem from="1600080757776" duration="7191000" />
+      <workItem from="1600080757776" duration="8986000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -439,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600088462743</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat: search inside the blog_posts">
+      <created>1600089413381</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1600089413381</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="hashing the password, and verifying the email, password .... while creating a user." />
     <MESSAGE value="added unique fields (email, username), and repeating the password (virtual field)" />
     <MESSAGE value="Added user authentication and JWT tokens" />
     <MESSAGE value="Using is_granted() to limit some stuff to only authenticated users, and set the author inside blog_posts automatically." />
@@ -496,7 +502,8 @@
     <MESSAGE value="feat: images can be uploaded and the name is generated with a link to that specific image :D" />
     <MESSAGE value="feat: linked the images with the blog_posts" />
     <MESSAGE value="feat: ordering posts and blogs by date" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: ordering posts and blogs by date" />
+    <MESSAGE value="feat: search inside the blog_posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: search inside the blog_posts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -523,11 +530,11 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1479" y="413" width="414" height="452" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599825482493" />
-    <state x="1612" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600088462663">
+    <state x="1612" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600089413325">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1612" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600088462663" />
+    <state x="1612" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600089413325" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -549,10 +556,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1834" y="565" width="303" height="178" key="VCS.ChangelistChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600019425974" />
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600088465815">
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600089419217">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600088465815" />
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600089419217" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
