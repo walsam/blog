@@ -61,7 +61,7 @@ class Comment implements AuthoredEntityInterface, PublishedDateEntityInterface
 
     /**
      * @ORM\Column(type="datetime")
-     * @Assert\DateTime()
+     * @Assert\NotBlank()
      * @Groups({"get-comment-with-author"})
      */
     private $published;

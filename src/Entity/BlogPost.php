@@ -90,7 +90,7 @@ class BlogPost implements AuthoredEntityInterface, PublishedDateEntityInterface
 
     /**
      * @ORM\Column(type="datetime")
-     * @Assert\DateTime()
+     * @Assert\NotBlank()
      * @Groups({"get-blog-post-with-author"})
      */
     private $published;
