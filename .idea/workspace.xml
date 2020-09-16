@@ -26,10 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminSecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/SimplestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <list id="227999be-8382-452a-8516-12b01aec8ec9" name="the api send emails with confirmation links, and they work :D" comment="the api send emails with confirmation links, and they work :D">
       <change afterPath="$PROJECT_DIR$/src/Email/Mailer.php" afterDir="false" />
@@ -164,6 +171,7 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
     </include_path>
   </component>
   <component name="ProjectId" id="1h94hT8rMOm7C7pwBlaiOj7ANv0" />
@@ -219,7 +227,8 @@
       <workItem from="1600012247364" duration="7357000" />
       <workItem from="1600019618177" duration="495000" />
       <workItem from="1600080757776" duration="11475000" />
-      <workItem from="1600164895699" duration="10486000" />
+      <workItem from="1600164895699" duration="11248000" />
+      <workItem from="1600254472894" duration="2803000" />
     </task>
     <task id="LOCAL-00001" summary="testing the controller and routing in symfony">
       <created>1599413258182</created>
@@ -508,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600174192300</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="added login for the admin panel">
+      <created>1600175844298</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1600175844298</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +556,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding Author's informations to posts and comments instead of urls." />
     <MESSAGE value="added some Roles to users (a user can have multiple roles)" />
     <MESSAGE value="added the roles into data fixtures with proper comments and posts accordingly to the user role" />
     <MESSAGE value="added role_hierarchy into security.yaml to help me later on." />
@@ -565,17 +580,18 @@
     <MESSAGE value="feat: added the image uploader to easy admin, and display images" />
     <MESSAGE value="fix: fixed the datetime error in comments and blogposts" />
     <MESSAGE value="feat; adding show option to posts, and showing comments in a table." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat; adding show option to posts, and showing comments in a table." />
+    <MESSAGE value="added login for the admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login for the admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1764" y="529" width="444" height="249" key="#Composer/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599410215894" />
-    <state x="1701" y="475" width="570" height="357" key="#Notifications" timestamp="1600080783662">
+    <state x="1701" y="475" width="570" height="357" key="#Notifications" timestamp="1600254534077">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1701" y="475" width="570" height="357" key="#Notifications/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600080783662" />
+    <state x="1701" y="475" width="570" height="357" key="#Notifications/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600254534077" />
     <state x="1765" y="360" width="441" height="609" key="#com.intellij.ide.util.MemberChooser" timestamp="1600172156797">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -592,20 +608,20 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1479" y="413" width="414" height="459" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600172419242" />
-    <state x="1612" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600174192247">
+    <state x="1612" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600175844249">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1612" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600174192247" />
+    <state x="1612" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600175844249" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1599592209599" />
-    <state x="1779" y="410" width="729" height="575" key="NewPhpClassDialog" timestamp="1600175233370">
+    <state x="1779" y="410" width="729" height="575" key="NewPhpClassDialog" timestamp="1600257981207">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="440" y="416" width="577" height="568" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599826679308" />
-    <state x="1779" y="410" width="729" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600175233370" />
+    <state x="1779" y="410" width="729" height="575" key="NewPhpClassDialog/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600257981207" />
     <state x="1797" y="587" width="387" height="133" key="ReplaceDuplicatesPrompt" timestamp="1600172422632">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -622,10 +638,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1834" y="565" width="303" height="178" key="VCS.ChangelistChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600019425974" />
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600174195073">
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600175848309">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600174195073" />
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600175848309" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
