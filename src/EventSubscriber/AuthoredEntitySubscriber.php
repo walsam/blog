@@ -37,8 +37,14 @@ class AuthoredEntitySubscriber implements EventSubscriberInterface
         $entity = $event->getControllerResult();
         $method = $event->getRequest()->getMethod();
 
-        /**@var UserInterface $author */
-        $author = $this->tokenStorage->getToken()->getUser();
+        $token = $this->tokenStorage->getToken();
+
+        if (null === $token) {
+            return;
+        }
+
+        /** @var UserInterface $author */
+        $author = $token->getUser();
 
         if (!$entity instanceof AuthoredEntityInterface || Request::METHOD_POST !== $method){
             return;
