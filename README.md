@@ -1,5 +1,5 @@
 # blog
-A blog using Symfony's API Platform and React JS
+A blog using Symfony's API Platform 
 
 
 i'm just adding whatever as I go, the goal is to master using API platform and react JS,
