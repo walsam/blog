@@ -26,14 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f9fc39-1401-4c7c-92b0-63dba5a331e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventListener/AuthenticationSuccessListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventListener/ExceptionListener.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/blog_posts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/blog_posts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Image.php" afterDir="false" />
     </list>
     <list id="227999be-8382-452a-8516-12b01aec8ec9" name="the api send emails with confirmation links, and they work :D" comment="the api send emails with confirmation links, and they work :D">
       <change afterPath="$PROJECT_DIR$/src/Email/Mailer.php" afterDir="false" />
@@ -200,7 +194,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/EventSubscriber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/features/fixtures" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -214,6 +208,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/features/fixtures" />
       <recent name="$PROJECT_DIR$/src/EventSubscriber" />
     </key>
   </component>
@@ -243,14 +238,7 @@
       <workItem from="1600164895699" duration="11248000" />
       <workItem from="1600254472894" duration="2803000" />
       <workItem from="1600263241616" duration="3372000" />
-      <workItem from="1600346609357" duration="3724000" />
-    </task>
-    <task id="LOCAL-00002" summary="before easy admin">
-      <created>1599592127470</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1599592127470</updated>
+      <workItem from="1600346609357" duration="4343000" />
     </task>
     <task id="LOCAL-00003" summary="easyadmin version2 installed">
       <created>1599592619278</created>
@@ -588,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600359511390</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="done with the tests, i hope :D">
+      <created>1600360666183</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1600360666183</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +615,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed: the enabled field now works ;)" />
     <MESSAGE value="new created accounts get a generated token (inside the database) to use it later to confirm their account." />
     <MESSAGE value="feat: accounts can be confirmed using the token :D" />
     <MESSAGE value="the api send emails with confirmation links, and they work :D" />
@@ -645,7 +639,8 @@
     <MESSAGE value="test : Running first blog-post feature" />
     <MESSAGE value="Authenticated testing, JSON matching" />
     <MESSAGE value="Further testing for errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Further testing for errors" />
+    <MESSAGE value="done with the tests, i hope :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with the tests, i hope :D" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -656,6 +651,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1701" y="475" width="570" height="357" key="#Notifications/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600254534077" />
+    <state x="1665" y="452" width="641" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600360391299">
+      <screen x="1280" y="256" width="1366" height="768" />
+    </state>
+    <state x="1665" y="452" width="641" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600360391299" />
     <state x="1765" y="360" width="441" height="609" key="#com.intellij.ide.util.MemberChooser" timestamp="1600172156797">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -676,11 +675,11 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1779" y="349" width="414" height="616" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600264628495" />
-    <state x="1624" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600359511326">
+    <state x="1624" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600360666113">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
-    <state x="1624" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600359511326" />
+    <state x="1624" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600360666113" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
