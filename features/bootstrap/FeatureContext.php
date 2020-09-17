@@ -2,7 +2,6 @@
 
 use Behat\Gherkin\Node\PyStringNode;
 
-
 class FeatureContext extends \Behatch\Context\RestContext
 {
     const USERS = [
@@ -25,7 +24,6 @@ class FeatureContext extends \Behatch\Context\RestContext
      * @var \Coduo\PHPMatcher\Matcher
      */
     private $matcher;
-
     /**
      * @var \Doctrine\ORM\EntityManagerInterface
      */
@@ -81,18 +79,21 @@ class FeatureContext extends \Behatch\Context\RestContext
         );
     }
 
-
     /**
      * @BeforeScenario @createSchema
      */
-    public function createSchema(){
+    public function createSchema()
+    {
+        // Get entity metadata
+        $classes = $this->em->getMetadataFactory()
+            ->getAllMetadata();
 
-        $classes = $this->em->getMetadataFactory()->getAllMetadata();
-
+        // Drop and create schema
         $schemaTool = new \Doctrine\ORM\Tools\SchemaTool($this->em);
         $schemaTool->dropSchema($classes);
         $schemaTool->createSchema($classes);
 
+        // Load fixtures... and execute
         $purger = new \Doctrine\Common\DataFixtures\Purger\ORMPurger($this->em);
         $fixturesExecutor =
             new \Doctrine\Common\DataFixtures\Executor\ORMExecutor(
@@ -105,4 +106,14 @@ class FeatureContext extends \Behatch\Context\RestContext
         ]);
     }
 
+    /**
+     * @BeforeScenario @image
+     */
+    public function prepareImages()
+    {
+        copy(
+            __DIR__.'/../fixtures/Stewie.png',
+            __DIR__.'/../fixtures/files/Stewie.png'
+        );
+    }
 }
