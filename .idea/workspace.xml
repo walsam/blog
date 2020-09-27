@@ -243,13 +243,10 @@
       <workItem from="1600771284644" duration="1226000" />
       <workItem from="1600880675416" duration="668000" />
       <workItem from="1600950706625" duration="9000" />
-    </task>
-    <task id="LOCAL-00004" summary="easyadmin version2 installed">
-      <created>1599592663588</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1599592663588</updated>
+      <workItem from="1600965938891" duration="1081000" />
+      <workItem from="1601026134059" duration="1320000" />
+      <workItem from="1601207999473" duration="132000" />
+      <workItem from="1601208472892" duration="347000" />
     </task>
     <task id="LOCAL-00005" summary="relation between comments and a post. added some data through Fixtures, and generated random data with Faker.">
       <created>1599658332834</created>
@@ -587,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600361147004</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="some other fixes for react">
+      <created>1600966195954</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1600966195954</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +623,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: accounts can be confirmed using the token :D" />
     <MESSAGE value="the api send emails with confirmation links, and they work :D" />
     <MESSAGE value="feat: images can be uploaded and the name is generated with a link to that specific image :D" />
     <MESSAGE value="feat: linked the images with the blog_posts" />
@@ -644,7 +647,8 @@
     <MESSAGE value="Further testing for errors" />
     <MESSAGE value="done with the tests, i hope :D" />
     <MESSAGE value="some last fixes before starting React" />
-    <option name="LAST_COMMIT_MESSAGE" value="some last fixes before starting React" />
+    <MESSAGE value="some other fixes for react" />
+    <option name="LAST_COMMIT_MESSAGE" value="some other fixes for react" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1764" y="529" width="444" height="249" key="#Composer" timestamp="1599410215894">
@@ -679,11 +683,12 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1779" y="349" width="414" height="616" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600264628495" />
-    <state x="1624" y="277" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600361146940">
+    <state x="1624" y="283" width="912" height="727" key="CommitChangelistDialog2" timestamp="1600966195801">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="368" y="297" width="912" height="727" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@0.277.1280.747" timestamp="1599827096540" />
     <state x="1624" y="277" width="912" height="747" key="CommitChangelistDialog2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600361146940" />
+    <state x="1624" y="283" key="CommitChangelistDialog2/1280.256.1366.768/0.283.1280.741@1280.256.1366.768" timestamp="1600966195801" />
     <state x="1724" y="565" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599592209599">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
@@ -709,10 +714,11 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1834" y="565" width="303" height="178" key="VCS.ChangelistChooser/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600019425974" />
-    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600361150914">
+    <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600966382936">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1586" y="386" width="800" height="535" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.277.1280.747@1280.256.1366.768" timestamp="1600361150914" />
+    <state x="1586" y="386" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.283.1280.741@1280.256.1366.768" timestamp="1600966382936" />
     <state x="1436" y="377" width="1110" height="547" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599591999345">
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
